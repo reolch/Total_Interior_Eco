@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-.playfair-display {
+
+.playfair-display-400 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.playfair-display-900 {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 900;
@@ -13,19 +21,19 @@
     padding: 1rem;
 }
 
-.header .container {
+.header__container {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
 }
 
-.header h1 {
+.header__title {
     font-size: 2rem;
     margin: 0;
 }
 
-.header nav a {
+.header__nav a {
     color: #000;
     text-decoration: none;
 }
@@ -39,7 +47,7 @@
     justify-content: center;
 }
 
-.navbar ul {
+.navbar__list {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -47,18 +55,18 @@
     justify-content: center;
 }
 
-.navbar li {
+.navbar__item {
     margin: 0 1rem;
 }
 
-.navbar a {
+.navbar__link {
     color: #000;
     text-decoration: none;
     padding: 0.5rem 1rem;
     display: block;
 }
 
-.navbar a:hover {
+.navbar__link:hover {
     background-color: #555;
 }
 
@@ -70,24 +78,24 @@
         align-items: center;
     }
 
-    .navbar.open {
+    .navbar--open {
         display: flex;
     }
 
-    .navbar ul {
+    .navbar__list {
         flex-direction: column;
         align-items: center;
     }
 
-    .navbar li {
+    .navbar__item {
         margin: 0.5rem 0;
     }
 
-    .navbar a {
+    .navbar__link {
         padding: 0.5rem;
     }
 
-    .hamburger {
+    .header__hamburger {
         display: flex;
         flex-direction: column;
         cursor: pointer;
@@ -96,7 +104,7 @@
         right: 1rem;
     }
 
-    .hamburger .bar {
+    .header__bar {
         width: 25px;
         height: 3px;
         background-color: #000;
@@ -107,13 +115,13 @@
 
 /* PC向けハンバーガーメニュー非表示 */
 @media (min-width: 1025px) {
-    .hamburger {
+    .header__hamburger {
         display: none;
     }
 }
 
 /* リボンスタイル */
-.ribbon-drop-wrapper {
+.ribbon {
     height: 45px;
     width: 100%;
     padding: 16px auto;
@@ -121,13 +129,13 @@
     text-align: center;
 }
 
-.ribbon-content-wrapper {
+.ribbon__content {
     margin-top: 16px;
     margin-bottom: 16px;
     height: auto;
 }
 
-.ribbon-content-wrapper a {
+.ribbon__link {
     color: #000;
     margin: 0 auto;
     text-decoration: none;
@@ -135,31 +143,31 @@
 
 /* モバイル向けスタイル強化 */
 @media (max-width: 768px) {
-    .header h1 {
+    .header__title {
         font-size: 1.5rem;
         margin: 0.5rem 0;
         text-align: center;
     }
 
-    .navbar a {
+    .navbar__link {
         font-size: 1rem;
         padding: 0.5rem 1rem;
     }
 
-    .navbar li {
+    .navbar__item {
         margin: 0.3rem 0;
     }
 
-    .ribbon-content-wrapper a {
+    .ribbon__link {
         font-size: 0.8rem;
     }
 
-    .hamburger {
+    .header__hamburger {
         top: 12px;
         right: 0px;
     }
 
-    .hamburger .bar {
+    .header__bar {
         width: 20px;
         height: 2px;
     }

@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Total_Interior_Eco/static/css/main.f6190250.css",
-    "main.js": "/Total_Interior_Eco/static/js/main.704ae635.js",
+    "main.js": "/Total_Interior_Eco/static/js/main.ea348d85.js",
     "static/js/453.1eb5cc81.chunk.js": "/Total_Interior_Eco/static/js/453.1eb5cc81.chunk.js",
     "index.html": "/Total_Interior_Eco/index.html",
     "main.f6190250.css.map": "/Total_Interior_Eco/static/css/main.f6190250.css.map",
-    "main.704ae635.js.map": "/Total_Interior_Eco/static/js/main.704ae635.js.map",
+    "main.ea348d85.js.map": "/Total_Interior_Eco/static/js/main.ea348d85.js.map",
     "453.1eb5cc81.chunk.js.map": "/Total_Interior_Eco/static/js/453.1eb5cc81.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f6190250.css",
-    "static/js/main.704ae635.js"
+    "static/js/main.ea348d85.js"
   ]
 }

@@ -10,10 +10,10 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Total_Interior_Eco">
       <Header />
       <div className="content">
-        <Routes basename={"/Total_Interior_Eco"}>
+        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/gallery" element={<Gallery />} />

@@ -13,7 +13,7 @@ function App() {
     <Router>
       <Header />
       <div className="content">
-        <Routes>
+        <Routes basename={"/Total_Interior_Eco"}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/gallery" element={<Gallery />} />
